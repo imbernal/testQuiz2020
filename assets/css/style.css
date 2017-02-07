@@ -1,0 +1,144 @@
+body{
+  background-image:  linear-gradient(rgba(139, 195, 74, 0.76), transparent) , linear-gradient(to top , white , transparent),url("../img/screen.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.mainContainer{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+#send{
+  outline: none;
+}
+
+.textQuiz{
+  width: 80%;
+
+}
+
+
+
+.showButton{
+  display: none;
+}
+
+.isRight{
+  display: none;
+}
+
+.isRight p{
+
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+
+}
+
+.isRightAfter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.isRight img{
+  width: 100px;
+  height: 100px;
+}
+
+.addAnimation{
+  animation: question 2s linear;
+}
+
+input[type=radio]{
+  visibility: hidden;
+}
+
+.label{
+
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+
+}
+
+.checkRadioInside{
+
+  background: #65b903;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+
+}
+
+.bttn-slant.bttn-primary:before{
+  background: #8BC34A !important;
+}
+
+.bttn-slant.bttn-primary:after{
+  background-color: #00bf08 !important;
+}
+
+.bttn-slant.bttn-primary:hover:before, .bttn-slant.bttn-primary:focus:before{
+  box-shadow: inset 0 -1px 0 #4CAF50, inset 0 1px 0px #4CAF50, inset -1px 0px 0px #4CAF50 !important;
+}
+
+label{
+  font-size: 115% !important;
+}
+
+code{
+  color: #267d29 !important;
+  background-color: rgba(249, 242, 244, 0.61) !important;
+}
+
+#question{
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "FormalScriptBold";
+  font-size: 25px;
+
+}
+
+.radioButton{
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    border: 4px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.answers{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 64%;
+}
+
+@keyframes question {
+
+  0%{ opacity: 1}
+  100%{ opacity: 0}
+
+
+}
